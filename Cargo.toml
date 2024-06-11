@@ -1,0 +1,21 @@
+[package]
+name = "atomic_sibling_counter"
+version = "0.1.0"
+edition = "2021"
+authors = ["Anatoliy Samara <anatoliy@2xsamara.com>"]
+license = "MIT OR Apache-2.0"
+categories = ["asynchronous", "concurrency", "memory-management"]
+description = "A shared counter that allows parallel threads/tasks to check how many siblings they have. The counter is atomic and threads/tasks are not synchronized or coupled in any way."
+documentation = "https://docs.rs/atomic_sibling_counter"
+keywords = ["atomic", "siblings", "counter", "arc"]
+repository = "https://github.com/anatols/atomic_sibling_counter"
+homepage = "https://github.com/anatols/atomic_sibling_counter"
+rust-version = "1.77.2"
+readme = "README.md"
+include = ["src", "tests", "LICENSE*", "README.md"]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dev-dependencies]
+cap = "0.1.2"
